@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="sendNotication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sendNoticationResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="APNS_Send_Single">
+        <s:complexType />
+      </s:element>
+      <s:element name="APNS_Send_SingleResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Gcm_Send_Single">
+        <s:complexType />
+      </s:element>
+      <s:element name="Gcm_Send_SingleResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="InsertDeviceDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceTokenID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDeviceDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertDeviceDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnreadMessageCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnreadMessageCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUnreadMessageCountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="sendNoticationSoapIn">
+    <wsdl:part name="parameters" element="tns:sendNotication" />
+  </wsdl:message>
+  <wsdl:message name="sendNoticationSoapOut">
+    <wsdl:part name="parameters" element="tns:sendNoticationResponse" />
+  </wsdl:message>
+  <wsdl:message name="APNS_Send_SingleSoapIn">
+    <wsdl:part name="parameters" element="tns:APNS_Send_Single" />
+  </wsdl:message>
+  <wsdl:message name="APNS_Send_SingleSoapOut">
+    <wsdl:part name="parameters" element="tns:APNS_Send_SingleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Gcm_Send_SingleSoapIn">
+    <wsdl:part name="parameters" element="tns:Gcm_Send_Single" />
+  </wsdl:message>
+  <wsdl:message name="Gcm_Send_SingleSoapOut">
+    <wsdl:part name="parameters" element="tns:Gcm_Send_SingleResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertDeviceDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertDeviceDetail" />
+  </wsdl:message>
+  <wsdl:message name="InsertDeviceDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertDeviceDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUnreadMessageCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUnreadMessageCount" />
+  </wsdl:message>
+  <wsdl:message name="GetUnreadMessageCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUnreadMessageCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendNoticationHttpGetIn">
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendNoticationHttpGetOut" />
+  <wsdl:message name="APNS_Send_SingleHttpGetIn" />
+  <wsdl:message name="APNS_Send_SingleHttpGetOut" />
+  <wsdl:message name="Gcm_Send_SingleHttpGetIn" />
+  <wsdl:message name="Gcm_Send_SingleHttpGetOut" />
+  <wsdl:message name="InsertDeviceDetailHttpGetIn">
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="DeviceName" type="s:string" />
+    <wsdl:part name="DeviceTokenID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertDeviceDetailHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUnreadMessageCountHttpGetIn">
+    <wsdl:part name="UserID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUnreadMessageCountHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="sendNoticationHttpPostIn">
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendNoticationHttpPostOut" />
+  <wsdl:message name="APNS_Send_SingleHttpPostIn" />
+  <wsdl:message name="APNS_Send_SingleHttpPostOut" />
+  <wsdl:message name="Gcm_Send_SingleHttpPostIn" />
+  <wsdl:message name="Gcm_Send_SingleHttpPostOut" />
+  <wsdl:message name="InsertDeviceDetailHttpPostIn">
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="DeviceName" type="s:string" />
+    <wsdl:part name="DeviceTokenID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertDeviceDetailHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUnreadMessageCountHttpPostIn">
+    <wsdl:part name="UserID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUnreadMessageCountHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="MessageListSoap">
+    <wsdl:operation name="sendNotication">
+      <wsdl:input message="tns:sendNoticationSoapIn" />
+      <wsdl:output message="tns:sendNoticationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="APNS_Send_Single">
+      <wsdl:input message="tns:APNS_Send_SingleSoapIn" />
+      <wsdl:output message="tns:APNS_Send_SingleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Gcm_Send_Single">
+      <wsdl:input message="tns:Gcm_Send_SingleSoapIn" />
+      <wsdl:output message="tns:Gcm_Send_SingleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDeviceDetail">
+      <wsdl:input message="tns:InsertDeviceDetailSoapIn" />
+      <wsdl:output message="tns:InsertDeviceDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageCount">
+      <wsdl:input message="tns:GetUnreadMessageCountSoapIn" />
+      <wsdl:output message="tns:GetUnreadMessageCountSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MessageListHttpGet">
+    <wsdl:operation name="sendNotication">
+      <wsdl:input message="tns:sendNoticationHttpGetIn" />
+      <wsdl:output message="tns:sendNoticationHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="APNS_Send_Single">
+      <wsdl:input message="tns:APNS_Send_SingleHttpGetIn" />
+      <wsdl:output message="tns:APNS_Send_SingleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Gcm_Send_Single">
+      <wsdl:input message="tns:Gcm_Send_SingleHttpGetIn" />
+      <wsdl:output message="tns:Gcm_Send_SingleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDeviceDetail">
+      <wsdl:input message="tns:InsertDeviceDetailHttpGetIn" />
+      <wsdl:output message="tns:InsertDeviceDetailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageCount">
+      <wsdl:input message="tns:GetUnreadMessageCountHttpGetIn" />
+      <wsdl:output message="tns:GetUnreadMessageCountHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MessageListHttpPost">
+    <wsdl:operation name="sendNotication">
+      <wsdl:input message="tns:sendNoticationHttpPostIn" />
+      <wsdl:output message="tns:sendNoticationHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="APNS_Send_Single">
+      <wsdl:input message="tns:APNS_Send_SingleHttpPostIn" />
+      <wsdl:output message="tns:APNS_Send_SingleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Gcm_Send_Single">
+      <wsdl:input message="tns:Gcm_Send_SingleHttpPostIn" />
+      <wsdl:output message="tns:Gcm_Send_SingleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDeviceDetail">
+      <wsdl:input message="tns:InsertDeviceDetailHttpPostIn" />
+      <wsdl:output message="tns:InsertDeviceDetailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageCount">
+      <wsdl:input message="tns:GetUnreadMessageCountHttpPostIn" />
+      <wsdl:output message="tns:GetUnreadMessageCountHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MessageListSoap" type="tns:MessageListSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="sendNotication">
+      <soap:operation soapAction="http://tempuri.org/sendNotication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="APNS_Send_Single">
+      <soap:operation soapAction="http://tempuri.org/APNS_Send_Single" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Gcm_Send_Single">
+      <soap:operation soapAction="http://tempuri.org/Gcm_Send_Single" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDeviceDetail">
+      <soap:operation soapAction="http://tempuri.org/InsertDeviceDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageCount">
+      <soap:operation soapAction="http://tempuri.org/GetUnreadMessageCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MessageListSoap12" type="tns:MessageListSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="sendNotication">
+      <soap12:operation soapAction="http://tempuri.org/sendNotication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="APNS_Send_Single">
+      <soap12:operation soapAction="http://tempuri.org/APNS_Send_Single" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Gcm_Send_Single">
+      <soap12:operation soapAction="http://tempuri.org/Gcm_Send_Single" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDeviceDetail">
+      <soap12:operation soapAction="http://tempuri.org/InsertDeviceDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageCount">
+      <soap12:operation soapAction="http://tempuri.org/GetUnreadMessageCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MessageListHttpGet" type="tns:MessageListHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="sendNotication">
+      <http:operation location="/sendNotication" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="APNS_Send_Single">
+      <http:operation location="/APNS_Send_Single" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="Gcm_Send_Single">
+      <http:operation location="/Gcm_Send_Single" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDeviceDetail">
+      <http:operation location="/InsertDeviceDetail" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageCount">
+      <http:operation location="/GetUnreadMessageCount" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MessageListHttpPost" type="tns:MessageListHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="sendNotication">
+      <http:operation location="/sendNotication" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="APNS_Send_Single">
+      <http:operation location="/APNS_Send_Single" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="Gcm_Send_Single">
+      <http:operation location="/Gcm_Send_Single" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDeviceDetail">
+      <http:operation location="/InsertDeviceDetail" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnreadMessageCount">
+      <http:operation location="/GetUnreadMessageCount" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MessageList">
+    <wsdl:port name="MessageListSoap" binding="tns:MessageListSoap">
+      <soap:address location="http://webservice.emojicode.co.uk/Webservices/MessageList.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MessageListSoap12" binding="tns:MessageListSoap12">
+      <soap12:address location="http://webservice.emojicode.co.uk/Webservices/MessageList.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MessageListHttpGet" binding="tns:MessageListHttpGet">
+      <http:address location="http://webservice.emojicode.co.uk/Webservices/MessageList.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MessageListHttpPost" binding="tns:MessageListHttpPost">
+      <http:address location="http://webservice.emojicode.co.uk/Webservices/MessageList.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

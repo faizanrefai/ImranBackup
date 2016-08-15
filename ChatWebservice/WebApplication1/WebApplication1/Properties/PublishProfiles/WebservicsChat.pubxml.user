@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>G:\ALL_Publish\WebservicsChat</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/30/2016 00:30:25</publishTime>
+    </File>
+    <File Include="bin/nunit.framework.dll">
+      <publishTime>06/05/2016 15:10:03</publishTime>
+    </File>
+    <File Include="bin/PushSharp.Apple.dll">
+      <publishTime>06/26/2016 16:05:11</publishTime>
+    </File>
+    <File Include="bin/PushSharp.Core.dll">
+      <publishTime>06/26/2016 16:05:11</publishTime>
+    </File>
+    <File Include="bin/PushSharp.Google.dll">
+      <publishTime>06/26/2016 16:05:11</publishTime>
+    </File>
+    <File Include="bin/WebApplication1.dll">
+      <publishTime>07/03/2016 17:36:34</publishTime>
+    </File>
+    <File Include="CertificatePath/ECO_Production.p12">
+      <publishTime>06/15/2016 00:40:56</publishTime>
+    </File>
+    <File Include="CertificatePath/ECO_Sendbox.p12">
+      <publishTime>06/15/2016 00:03:16</publishTime>
+    </File>
+    <File Include="CertificatePath/PushSharp.Apns.Sandbox.p12">
+      <publishTime>06/12/2016 00:57:20</publishTime>
+    </File>
+    <File Include="Image/429207_396826866998640_1413439982_n.jpg">
+      <publishTime>05/04/2016 00:49:06</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/11/2016 21:27:59</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>07/03/2016 17:36:37</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/03/2016 17:36:35</publishTime>
+    </File>
+    <File Include="Webservices/FriendMaster.asmx">
+      <publishTime>04/30/2016 01:42:12</publishTime>
+    </File>
+    <File Include="Webservices/GroupMaster.asmx">
+      <publishTime>05/01/2016 02:22:17</publishTime>
+    </File>
+    <File Include="Webservices/MessageList.asmx">
+      <publishTime>05/31/2016 00:42:25</publishTime>
+    </File>
+    <File Include="Webservices/settings.sample.json">
+      <publishTime>06/12/2016 00:30:18</publishTime>
+    </File>
+    <File Include="Webservices/UserMaster.asmx">
+      <publishTime>04/30/2016 00:26:05</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Google\obj\Release\PushSharp.Google.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Google\bin\Release\PushSharp.Google.dll
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Google\bin\Release\PushSharp.Google.pdb
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Google\bin\Release\Newtonsoft.Json.dll
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Google\bin\Release\PushSharp.Core.dll
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Google\bin\Release\PushSharp.Core.pdb
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Google\bin\Release\Newtonsoft.Json.xml
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Google\obj\Release\PushSharp.Google.dll
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Google\obj\Release\PushSharp.Google.pdb

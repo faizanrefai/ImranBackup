@@ -1,0 +1,17 @@
+C:\Users\Tariq-PC\Downloads\PushSharp-master\PushSharp-master\PushSharp.Apple\bin\Release\PushSharp.Apple.dll
+C:\Users\Tariq-PC\Downloads\PushSharp-master\PushSharp-master\PushSharp.Apple\bin\Release\PushSharp.Apple.pdb
+C:\Users\Tariq-PC\Downloads\PushSharp-master\PushSharp-master\PushSharp.Apple\bin\Release\Newtonsoft.Json.dll
+C:\Users\Tariq-PC\Downloads\PushSharp-master\PushSharp-master\PushSharp.Apple\bin\Release\PushSharp.Core.dll
+C:\Users\Tariq-PC\Downloads\PushSharp-master\PushSharp-master\PushSharp.Apple\bin\Release\PushSharp.Core.pdb
+C:\Users\Tariq-PC\Downloads\PushSharp-master\PushSharp-master\PushSharp.Apple\bin\Release\Newtonsoft.Json.xml
+C:\Users\Tariq-PC\Downloads\PushSharp-master\PushSharp-master\PushSharp.Apple\obj\Release\PushSharp.Apple.dll
+C:\Users\Tariq-PC\Downloads\PushSharp-master\PushSharp-master\PushSharp.Apple\obj\Release\PushSharp.Apple.pdb
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Apple\obj\Release\PushSharp.Apple.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Apple\obj\Release\PushSharp.Apple.dll
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Apple\obj\Release\PushSharp.Apple.pdb
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Apple\bin\Release\PushSharp.Apple.dll
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Apple\bin\Release\PushSharp.Apple.pdb
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Apple\bin\Release\Newtonsoft.Json.dll
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Apple\bin\Release\PushSharp.Core.dll
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Apple\bin\Release\PushSharp.Core.pdb
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Apple\bin\Release\Newtonsoft.Json.xml

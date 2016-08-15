@@ -1,0 +1,10 @@
+C:\Users\Tariq-PC\Downloads\PushSharp-master\PushSharp-master\PushSharp.Core\bin\Debug\PushSharp.Core.dll
+C:\Users\Tariq-PC\Downloads\PushSharp-master\PushSharp-master\PushSharp.Core\bin\Debug\PushSharp.Core.pdb
+C:\Users\Tariq-PC\Downloads\PushSharp-master\PushSharp-master\PushSharp.Core\obj\Debug\PushSharp.Core.dll
+C:\Users\Tariq-PC\Downloads\PushSharp-master\PushSharp-master\PushSharp.Core\obj\Debug\PushSharp.Core.pdb
+C:\Users\Tariq-PC\Downloads\PushSharp-master\PushSharp-master\PushSharp.Core\obj\Debug\PushSharp.Core.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\PushSharp-master\PushSharp-master\PushSharp.Core\bin\Debug\PushSharp.Core.dll
+C:\inetpub\wwwroot\PushSharp-master\PushSharp-master\PushSharp.Core\bin\Debug\PushSharp.Core.pdb
+C:\inetpub\wwwroot\PushSharp-master\PushSharp-master\PushSharp.Core\obj\Debug\PushSharp.Core.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\PushSharp-master\PushSharp-master\PushSharp.Core\obj\Debug\PushSharp.Core.dll
+C:\inetpub\wwwroot\PushSharp-master\PushSharp-master\PushSharp.Core\obj\Debug\PushSharp.Core.pdb

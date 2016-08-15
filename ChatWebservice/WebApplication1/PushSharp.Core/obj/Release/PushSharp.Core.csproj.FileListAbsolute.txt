@@ -1,0 +1,4 @@
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Core\bin\Release\PushSharp.Core.dll
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Core\bin\Release\PushSharp.Core.pdb
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Core\obj\Release\PushSharp.Core.dll
+C:\inetpub\wwwroot\ChatWebservice\WebApplication1\PushSharp.Core\obj\Release\PushSharp.Core.pdb

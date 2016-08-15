@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{796B8813-30DE-43BB-8BF1-E82ADE331581}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9D99F80-FEEB-4E74-96C5-66F17103C773} = {A9D99F80-FEEB-4E74-96C5-66F17103C773}
+		{94F16497-471F-433F-A99E-C455FB2D7724} = {94F16497-471F-433F-A99E-C455FB2D7724}
+		{2B44A8DA-60BC-4577-A2D7-D9D53F164B2E} = {2B44A8DA-60BC-4577-A2D7-D9D53F164B2E}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PushPlateform", "PushPlateform", "{8306B3D0-7D0C-4AE4-84C7-14441CD7E5C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushSharp.Core", "PushSharp.Core\PushSharp.Core.csproj", "{2B44A8DA-60BC-4577-A2D7-D9D53F164B2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D89C0BB2-DD44-497F-911F-FE82521828E2}"
+	ProjectSection(SolutionItems) = preProject
+		PushSharp-Signing.snk = PushSharp-Signing.snk
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushSharp.Apple", "PushSharp.Apple\PushSharp.Apple.csproj", "{A9D99F80-FEEB-4E74-96C5-66F17103C773}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushSharp.Google", "PushSharp.Google\PushSharp.Google.csproj", "{94F16497-471F-433F-A99E-C455FB2D7724}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{796B8813-30DE-43BB-8BF1-E82ADE331581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{796B8813-30DE-43BB-8BF1-E82ADE331581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{796B8813-30DE-43BB-8BF1-E82ADE331581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{796B8813-30DE-43BB-8BF1-E82ADE331581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B44A8DA-60BC-4577-A2D7-D9D53F164B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B44A8DA-60BC-4577-A2D7-D9D53F164B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B44A8DA-60BC-4577-A2D7-D9D53F164B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B44A8DA-60BC-4577-A2D7-D9D53F164B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D99F80-FEEB-4E74-96C5-66F17103C773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D99F80-FEEB-4E74-96C5-66F17103C773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D99F80-FEEB-4E74-96C5-66F17103C773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D99F80-FEEB-4E74-96C5-66F17103C773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F16497-471F-433F-A99E-C455FB2D7724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F16497-471F-433F-A99E-C455FB2D7724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F16497-471F-433F-A99E-C455FB2D7724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F16497-471F-433F-A99E-C455FB2D7724}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B44A8DA-60BC-4577-A2D7-D9D53F164B2E} = {8306B3D0-7D0C-4AE4-84C7-14441CD7E5C3}
+		{A9D99F80-FEEB-4E74-96C5-66F17103C773} = {8306B3D0-7D0C-4AE4-84C7-14441CD7E5C3}
+		{94F16497-471F-433F-A99E-C455FB2D7724} = {8306B3D0-7D0C-4AE4-84C7-14441CD7E5C3}
+	EndGlobalSection
+EndGlobal
